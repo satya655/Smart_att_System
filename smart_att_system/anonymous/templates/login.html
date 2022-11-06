@@ -1,0 +1,12 @@
+<form method="post">
+    <h1>login form</h1>
+    email<input name="email"type="text",placeholder="enter email"/>
+    <br/>
+    password<input name="password"type="text",placeholder="enter password"/>
+    <br/>
+    <input type="submit"value="login"name="b1"/>
+    {% csrf_token %}
+    </form>
+    {% if output %}
+    <h1>{{output}}</h1>
+    {% endif %}

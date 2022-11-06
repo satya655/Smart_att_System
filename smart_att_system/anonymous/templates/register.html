@@ -1,0 +1,21 @@
+register Here!
+<form method="POST">
+    name<input name="name" type="text"/>
+    <br/>
+    email<input name="email" type="text"/>
+    <br/>
+    password<input name="password" type="text"/>
+    <br/>
+    mobile<input name="mobile" type="text"/>
+    </br>
+    <select name="role_name">
+        <option>student</option>
+        <option>faculty</option>
+        </select>
+    </br>
+    <input type="submit" value="register" name="b1"/>
+    {% csrf_token %}
+</form>
+    {% if output %}
+    <h1>Result ={{output}}</h1>
+    {% endif %}
